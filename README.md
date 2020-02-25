@@ -2,30 +2,31 @@
 ---
 #### Materia: *[Poner aquí nombre de la materia]*
 
-##### Campus: *[Poner aquí su campus]*
-
 ##### Integrantes:
-1. *[Poner aquí Nombre y Apellidos del integrante 1]*
-2. *[Poner aquí Nombre y Apellidos del integrante 2]*
+1. *[Poner aquí Nombre y Apellidos del integrante 1]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
+2. *[Poner aquí Nombre y Apellidos del integrante 2]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
+3. *[Poner aquí Nombre y Apellidos del integrante 3]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
+4. *[Poner aquí Nombre y Apellidos del integrante 4]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
+5. *[Poner aquí Nombre y Apellidos del integrante 5]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
 
 ---
 ## 1. Aspectos generales
+
+Las orientaciones de la tarea se encuentran disponibles en la plataforma **Canvas**.
+
+Este documento es una guía sobre qué información debe entregar como parte del proyecto, qué requerimientos técnicos debe cumplir y la estructura que debe seguir para organizar su entrega.
 
 ### 1.1 Requerimientos técnicos
 
 A continuación se mencionan los requerimientos técnicos mínimos del proyecto, favor de tenerlos presente para que cumpla con todos.
 
 * El equipo tiene la libertad de elegir las tecnologías de desarrollo a utilizar en el proyecto, sin embargo, debe tener presente que la solución final se deberá ejecutar en una de las siguientes plataformas en la nube: [Google Cloud Platform](https://cloud.google.com/?hl=es), [Amazon Web Services](https://aws.amazon.com/) o [Microsoft Azure](https://azure.microsoft.com/es-mx/).
-* El proyecto deberá utilizar 
-* La solución debe utilizar una arquitectura de microservicios. Si no tiene conocimiento sobre este tema, le recomendamos la lectura [*Microservices*](https://martinfowler.com/articles/microservices.html) de [Martin Fowler](https://martinfowler.com).
-* La arquitectura debe ser modular, escalable, con redundancia y alta disponibilidad.
-* La arquitectura deberá estar separada claramente por capas (*frontend*, *backend*, *API RESTful*, datos y almacenamiento).
-* Deberá utilizarse contenedores [Docker](https://www.docker.com/) y un orquestador como [Kubernetes](https://kubernetes.io/).
-* La API deberá utilizar autenticación y estar desplegada detrás de un API Manager como [Cloud Endpoints](https://cloud.google.com/endpoints/).
-* El proyecto deberá contar con los archivos de configuración y *scripts* necesarios para crear toda la infraestructura necesaria, utilizando alguna solución de *Infraestructure as a Code* como [Deployment Manager](https://cloud.google.com/deployment-manager/).
+* El proyecto deberá utilizar una interfaz Web.
+* La arquitectura deberá estar separada claramente por capas (*frontend*, *backend*, *API RESTful*, datos y almacenamiento) según se necesite.
 * Todo el código, *datasets* y la documentación del proyecto debe alojarse en este repositorio de GitHub. Favor de mantener la estructura de carpetas propuesta.
 
 ### 1.2 Estructura del repositorio
+
 El proyecto debe seguir la siguiente estructura de carpetas, la cual generamos por usted:
 ```
 - / 			        # Raíz de todo el proyecto
@@ -35,7 +36,6 @@ El proyecto debe seguir la siguiente estructura de carpetas, la cual generamos p
     - api			      # Carpeta con la solución de la API
     - datasets		  # Carpeta con los datasets y recursos utilizados (csv, json, audio, videos, entre otros)
     - dbs			      # Carpeta con los modelos, catálogos y scripts necesarios para generar las bases de datos
-    - models			  # Carpeta donde se almacenarán los modelos de Machine Learning ya entrenados
     - docs			    # Carpeta con la documentación del proyecto
 ```
 
@@ -45,10 +45,7 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 * Descripción del problema a resolver.
 * Diagrama con la arquitectura de la solución.
-* Descripción de cada uno de los componentes de la arquitectura.
-* Justificación de los componentes seleccionados.
-* Explicación del flujo de información en la arquitectura.
-* Descripción de las fuentes de información utilizadas (archivos CSV, JSON, TXT, bases de datos, entre otras).
+* Descripción de cada uno de los componentes de la solución.
 * Guía de configuración, instalación y despliegue de la solución en la plataforma en la nube seleccionada.
 * Documentación de la API. Puede ver un ejemplo en [Swagger](https://swagger.io/). 
 * El código debe estar documentado siguiendo los estándares definidos para el lenguaje de programación seleccionado.
